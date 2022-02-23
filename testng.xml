@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="dataDriveTestingPackage.DataDrivenTest_AddNewEmployees"/>
+      <class name="testAPI.TC001_GET_Request"/>
+      <class name="testAPI.TC005_GET_Request_Validating_JSONResponse"/>
+      <class name="testAPI.TC002_POST_Request"/>
+      <class name="testAPI.TC007_GET_Authorization_Request"/>
+      <class name="testAPI.TC004_GET_Request_PrintAllHeaders"/>
+      <class name="dataDriveTestingPackage.dataDrivenTest_003"/>
+      <class name="testAPI.TC006_GET_Request_ExtractValuesOfEachNodes"/>
+      <class name="dataDriveTestingPackage.dataDrivenTest_002"/>
+      <class name="testAPI.TC003_GET_Request"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

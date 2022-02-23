@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="dataDriveTestingPackage.dataDrivenTest_003">
+        <methods>
+          <include name="postNewEmployees" invocation-numbers="1 2 3 4"/>
+        </methods>
+      </class> <!-- dataDriveTestingPackage.dataDrivenTest_003 -->
+      <class name="testAPI.TC001_GET_Request">
+        <methods>
+          <include name="getweatherDetails"/>
+        </methods>
+      </class> <!-- testAPI.TC001_GET_Request -->
+      <class name="dataDriveTestingPackage.dataDrivenTest_002">
+        <methods>
+          <include name="postNewEmployees" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- dataDriveTestingPackage.dataDrivenTest_002 -->
+      <class name="dataDriveTestingPackage.DataDrivenTest_AddNewEmployees">
+        <methods>
+          <include name="postNewEmployee"/>
+        </methods>
+      </class> <!-- dataDriveTestingPackage.DataDrivenTest_AddNewEmployees -->
+      <class name="testAPI.TC007_GET_Authorization_Request">
+        <methods>
+          <include name="getAuthorizationRequest"/>
+        </methods>
+      </class> <!-- testAPI.TC007_GET_Authorization_Request -->
+      <class name="testAPI.TC006_GET_Request_ExtractValuesOfEachNodes">
+        <methods>
+          <include name="getJSONDetails"/>
+        </methods>
+      </class> <!-- testAPI.TC006_GET_Request_ExtractValuesOfEachNodes -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

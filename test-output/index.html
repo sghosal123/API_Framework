@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 11 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\sghosal\eclipse-workspace\RestAssuredAPITesting\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods, 11 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testAPI.TC007_GET_Authorization_Request" class="method navigator-link" hash-for-method="getAuthorizationRequest">getAuthorizationRequest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testAPI.TC006_GET_Request_ExtractValuesOfEachNodes" class="method navigator-link" hash-for-method="getJSONDetails">getJSONDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testAPI.TC001_GET_Request" class="method navigator-link" hash-for-method="getweatherDetails">getweatherDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="dataDriveTestingPackage.DataDrivenTest_AddNewEmployees" class="method navigator-link" hash-for-method="postNewEmployee">postNewEmployee</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="dataDriveTestingPackage.dataDrivenTest_003" class="method navigator-link" hash-for-method="postNewEmployees(Misra2345, 78000, 43)">postNewEmployees(Misra2345, 78000, 43)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="dataDriveTestingPackage.dataDrivenTest_002" class="method navigator-link" hash-for-method="postNewEmployees(xyz123, 40000, 20)">postNewEmployees(xyz123, 40000, 20)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="dataDriveTestingPackage.dataDrivenTest_003" class="method navigator-link" hash-for-method="postNewEmployees(David34567, 70000, 45)">postNewEmployees(David34567, 70000, 45)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="dataDriveTestingPackage.dataDrivenTest_003" class="method navigator-link" hash-for-method="postNewEmployees(Scott3421, 76000, 34)">postNewEmployees(Scott3421, 76000, 34)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="dataDriveTestingPackage.dataDrivenTest_003" class="method navigator-link" hash-for-method="postNewEmployees(Smith123, 65000, 42)">postNewEmployees(Smith123, 65000, 42)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="dataDriveTestingPackage.dataDrivenTest_002" class="method navigator-link" hash-for-method="postNewEmployees(abc123, 30000, 40)">postNewEmployees(abc123, 30000, 40)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="dataDriveTestingPackage.dataDrivenTest_002" class="method navigator-link" hash-for-method="postNewEmployees(pqr123, 40000, 20)">postNewEmployees(pqr123, 40000, 20)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testAPI.TC004_GET_Request_PrintAllHeaders" class="method navigator-link" hash-for-method="getGoogleWeatherAPI">getGoogleWeatherAPI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testAPI.TC005_GET_Request_Validating_JSONResponse" class="method navigator-link" hash-for-method="getJSONDetails">getJSONDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testAPI.TC003_GET_Request" class="method navigator-link" hash-for-method="googlemapTest">googlemapTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="dataDriveTestingPackage.dataDrivenTest_003" class="method navigator-link" hash-for-method="postNewEmployees(John12356, 45000, 34)">postNewEmployees(John12356, 45000, 34)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testAPI.TC002_POST_Request" class="method navigator-link" hash-for-method="registrationSuccessful">registrationSuccessful</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">dataDriveTestingPackage.dataDrivenTest_003</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postNewEmployees(Misra2345, 78000, 43)">
+                  </a> <!-- postNewEmployees(Misra2345, 78000, 43) -->
+                  <span class="method-name">postNewEmployees</span>
+                  <span class="parameters">(Misra2345, 78000, 43)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at dataDriveTestingPackage.dataDrivenTest_003.postNewEmployees(dataDrivenTest_003.java:38)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postNewEmployees(David34567, 70000, 45)">
+                  </a> <!-- postNewEmployees(David34567, 70000, 45) -->
+                  <span class="method-name">postNewEmployees</span>
+                  <span class="parameters">(David34567, 70000, 45)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at dataDriveTestingPackage.dataDrivenTest_003.postNewEmployees(dataDrivenTest_003.java:38)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postNewEmployees(Scott3421, 76000, 34)">
+                  </a> <!-- postNewEmployees(Scott3421, 76000, 34) -->
+                  <span class="method-name">postNewEmployees</span>
+                  <span class="parameters">(Scott3421, 76000, 34)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at dataDriveTestingPackage.dataDrivenTest_003.postNewEmployees(dataDrivenTest_003.java:38)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postNewEmployees(Smith123, 65000, 42)">
+                  </a> <!-- postNewEmployees(Smith123, 65000, 42) -->
+                  <span class="method-name">postNewEmployees</span>
+                  <span class="parameters">(Smith123, 65000, 42)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at dataDriveTestingPackage.dataDrivenTest_003.postNewEmployees(dataDrivenTest_003.java:38)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testAPI.TC001_GET_Request</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getweatherDetails">
+                  </a> <!-- getweatherDetails -->
+                  <span class="method-name">getweatherDetails</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [429]
+	at testAPI.TC001_GET_Request.getweatherDetails(TC001_GET_Request.java:32)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">dataDriveTestingPackage.dataDrivenTest_002</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postNewEmployees(xyz123, 40000, 20)">
+                  </a> <!-- postNewEmployees(xyz123, 40000, 20) -->
+                  <span class="method-name">postNewEmployees</span>
+                  <span class="parameters">(xyz123, 40000, 20)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at dataDriveTestingPackage.dataDrivenTest_002.postNewEmployees(dataDrivenTest_002.java:36)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postNewEmployees(abc123, 30000, 40)">
+                  </a> <!-- postNewEmployees(abc123, 30000, 40) -->
+                  <span class="method-name">postNewEmployees</span>
+                  <span class="parameters">(abc123, 30000, 40)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at dataDriveTestingPackage.dataDrivenTest_002.postNewEmployees(dataDrivenTest_002.java:36)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postNewEmployees(pqr123, 40000, 20)">
+                  </a> <!-- postNewEmployees(pqr123, 40000, 20) -->
+                  <span class="method-name">postNewEmployees</span>
+                  <span class="parameters">(pqr123, 40000, 20)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at dataDriveTestingPackage.dataDrivenTest_002.postNewEmployees(dataDrivenTest_002.java:36)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testAPI.TC007_GET_Authorization_Request</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAuthorizationRequest">
+                  </a> <!-- getAuthorizationRequest -->
+                  <span class="method-name">getAuthorizationRequest</span>
+                  <div class="stack-trace">java.net.UnknownHostException: No such host is known (restapi.demoqa.com)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:932)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1517)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:851)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1507)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1366)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1300)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2146)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)
+	at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1544)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:822)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:47)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1293)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:822)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:152)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1749)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:822)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:47)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.RequestSpecificationImpl.request(RequestSpecificationImpl.groovy:295)
+	at io.restassured.internal.RequestSpecificationImpl.request(RequestSpecificationImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:822)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:47)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.RequestSpecificationImpl.request(RequestSpecificationImpl.groovy:291)
+	at io.restassured.internal.RequestSpecificationImpl.request(RequestSpecificationImpl.groovy)
+	at testAPI.TC007_GET_Authorization_Request.getAuthorizationRequest(TC007_GET_Authorization_Request.java:31)
+... Removed 45 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">dataDriveTestingPackage.DataDrivenTest_AddNewEmployees</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postNewEmployee">
+                  </a> <!-- postNewEmployee -->
+                  <span class="method-name">postNewEmployee</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at dataDriveTestingPackage.DataDrivenTest_AddNewEmployees.postNewEmployee(DataDrivenTest_AddNewEmployees.java:34)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testAPI.TC006_GET_Request_ExtractValuesOfEachNodes</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getJSONDetails">
+                  </a> <!-- getJSONDetails -->
+                  <span class="method-name">getJSONDetails</span>
+                  <div class="stack-trace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:986)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:951)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1031)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at testAPI.TC006_GET_Request_ExtractValuesOfEachNodes.getJSONDetails(TC006_GET_Request_ExtractValuesOfEachNodes.java:26)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:87)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:949)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:984)
+	... 29 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">dataDriveTestingPackage.dataDrivenTest_003</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postNewEmployees(John12356, 45000, 34)">
+                  </a> <!-- postNewEmployees(John12356, 45000, 34) -->
+                  <span class="method-name">postNewEmployees</span>
+                  <span class="parameters">(John12356, 45000, 34)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testAPI.TC004_GET_Request_PrintAllHeaders</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getGoogleWeatherAPI">
+                  </a> <!-- getGoogleWeatherAPI -->
+                  <span class="method-name">getGoogleWeatherAPI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testAPI.TC003_GET_Request</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="googlemapTest">
+                  </a> <!-- googlemapTest -->
+                  <span class="method-name">googlemapTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testAPI.TC002_POST_Request</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registrationSuccessful">
+                  </a> <!-- registrationSuccessful -->
+                  <span class="method-name">registrationSuccessful</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testAPI.TC005_GET_Request_Validating_JSONResponse</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getJSONDetails">
+                  </a> <!-- getJSONDetails -->
+                  <span class="method-name">getJSONDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\sghosal\eclipse-workspace\RestAssuredAPITesting\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;dataDriveTestingPackage.DataDrivenTest_AddNewEmployees&quot;/&gt;
+      &lt;class name=&quot;testAPI.TC001_GET_Request&quot;/&gt;
+      &lt;class name=&quot;testAPI.TC005_GET_Request_Validating_JSONResponse&quot;/&gt;
+      &lt;class name=&quot;testAPI.TC002_POST_Request&quot;/&gt;
+      &lt;class name=&quot;testAPI.TC007_GET_Authorization_Request&quot;/&gt;
+      &lt;class name=&quot;testAPI.TC004_GET_Request_PrintAllHeaders&quot;/&gt;
+      &lt;class name=&quot;dataDriveTestingPackage.dataDrivenTest_003&quot;/&gt;
+      &lt;class name=&quot;testAPI.TC006_GET_Request_ExtractValuesOfEachNodes&quot;/&gt;
+      &lt;class name=&quot;dataDriveTestingPackage.dataDrivenTest_002&quot;/&gt;
+      &lt;class name=&quot;testAPI.TC003_GET_Request&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (10 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'postNewEmployee')
+data.setCell(0, 2, 'dataDriveTestingPackage.DataDrivenTest_AddNewEmployees')
+data.setCell(0, 3, 2580);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'postNewEmployees')
+data.setCell(1, 2, 'dataDriveTestingPackage.dataDrivenTest_003')
+data.setCell(1, 3, 2330);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'postNewEmployees')
+data.setCell(2, 2, 'dataDriveTestingPackage.dataDrivenTest_003')
+data.setCell(2, 3, 1745);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'registrationSuccessful')
+data.setCell(3, 2, 'testAPI.TC002_POST_Request')
+data.setCell(3, 3, 1626);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'postNewEmployees')
+data.setCell(4, 2, 'dataDriveTestingPackage.dataDrivenTest_003')
+data.setCell(4, 3, 1602);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'postNewEmployees')
+data.setCell(5, 2, 'dataDriveTestingPackage.dataDrivenTest_003')
+data.setCell(5, 3, 1543);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'postNewEmployees')
+data.setCell(6, 2, 'dataDriveTestingPackage.dataDrivenTest_002')
+data.setCell(6, 3, 1538);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'postNewEmployees')
+data.setCell(7, 2, 'dataDriveTestingPackage.dataDrivenTest_002')
+data.setCell(7, 3, 1519);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'postNewEmployees')
+data.setCell(8, 2, 'dataDriveTestingPackage.dataDrivenTest_002')
+data.setCell(8, 3, 1482);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getweatherDetails')
+data.setCell(9, 2, 'testAPI.TC001_GET_Request')
+data.setCell(9, 3, 1462);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'postNewEmployees')
+data.setCell(10, 2, 'dataDriveTestingPackage.dataDrivenTest_003')
+data.setCell(10, 3, 1424);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'getJSONDetails')
+data.setCell(11, 2, 'testAPI.TC005_GET_Request_Validating_JSONResponse')
+data.setCell(11, 3, 1222);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'getGoogleWeatherAPI')
+data.setCell(12, 2, 'testAPI.TC004_GET_Request_PrintAllHeaders')
+data.setCell(12, 3, 982);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'getJSONDetails')
+data.setCell(13, 2, 'testAPI.TC006_GET_Request_ExtractValuesOfEachNodes')
+data.setCell(13, 3, 731);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'googlemapTest')
+data.setCell(14, 2, 'testAPI.TC003_GET_Request')
+data.setCell(14, 3, 412);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'getAuthorizationRequest')
+data.setCell(15, 2, 'testAPI.TC007_GET_Authorization_Request')
+data.setCell(15, 3, 117);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">dataDriveTestingPackage.DataDrivenTest_AddNewEmployees</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postNewEmployee</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testAPI.TC001_GET_Request</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getweatherDetails</span>
+                <span class="method-start">2584 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testAPI.TC005_GET_Request_Validating_JSONResponse</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getJSONDetails</span>
+                <span class="method-start">4053 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testAPI.TC002_POST_Request</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">registrationSuccessful</span>
+                <span class="method-start">5277 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testAPI.TC007_GET_Authorization_Request</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getAuthorizationRequest</span>
+                <span class="method-start">6904 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testAPI.TC004_GET_Request_PrintAllHeaders</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getGoogleWeatherAPI</span>
+                <span class="method-start">7023 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">dataDriveTestingPackage.dataDrivenTest_003</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">postNewEmployees(John12356, 45000, 34)</span>
+                <span class="method-start">8893 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postNewEmployees(David34567, 70000, 45)</span>
+                <span class="method-start">10640 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postNewEmployees(Misra2345, 78000, 43)</span>
+                <span class="method-start">12070 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postNewEmployees(Smith123, 65000, 42)</span>
+                <span class="method-start">13616 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postNewEmployees(Scott3421, 76000, 34)</span>
+                <span class="method-start">15947 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testAPI.TC006_GET_Request_ExtractValuesOfEachNodes</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getJSONDetails</span>
+                <span class="method-start">17550 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">dataDriveTestingPackage.dataDrivenTest_002</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postNewEmployees(abc123, 30000, 40)</span>
+                <span class="method-start">18283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postNewEmployees(xyz123, 40000, 20)</span>
+                <span class="method-start">19823 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postNewEmployees(pqr123, 40000, 20)</span>
+                <span class="method-start">21306 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testAPI.TC003_GET_Request</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">googlemapTest</span>
+                <span class="method-start">22826 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,11 @@
+testAPI\TC003_GET_Request.class
+dataDriveTestingPackage\DataDrivenTest_AddNewEmployees.class
+testAPI\TC005_GET_Request_Validating_JSONResponse.class
+testAPI\TC006_GET_Request_ExtractValuesOfEachNodes.class
+dataDriveTestingPackage\dataDrivenTest_003.class
+testAPI\TC007_GET_Authorization_Request.class
+testAPI\TC004_GET_Request_PrintAllHeaders.class
+dataDriveTestingPackage\XLutils.class
+testAPI\TC002_POST_Request.class
+dataDriveTestingPackage\dataDrivenTest_002.class
+testAPI\TC001_GET_Request.class
